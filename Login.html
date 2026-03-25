@@ -6,14 +6,37 @@
     <title>Login</title>
 </head>
 <body>
-    <b><h1>Welcome!</h1></b>
-    <img src="NewReads.png" alt="Logo" width="200px" height="200px"/><br>
-    <p><input type="email" name="email" size="20"
-      maxlength="30" /> </p>
-    <p> <input type="password" name="fjalekalimi" size="20"
-       maxlength="30" /> </p>
-    <p> <input type="submit" name="regjistrohu" value="Log in" /> </p>
-    <p> <input type="submit" name="regjistrohu" value="Sign Up" /> </p>
-    
+    <div class="container">
+        <div class="left">
+            <img src="NewReads.png" alt="NewReads Logo">
+        </div>
+        <div class="right">
+            <div class="form-box">
+                <h2>Welcome Back</h2>
+                <p>Login into your account</p>
+                <form>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter your password">
+                    </div>
+                    <div class="options">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit">Login</button>
+                    <p class="signup">
+                        Don't have an account?
+                        <a href="#">Sign Up</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
