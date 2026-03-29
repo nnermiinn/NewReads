@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1E4CC;
+    color: #2C2725;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(44, 39, 37, 0.5);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #F1E4CC;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #F1E4CC;
+}
+
+.hero-text p {
+    font-size: 16px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 10%;
+    gap: 20px;
+}
+
+.contact-box {
+    text-align: center;
+    width: 40%;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.contact-box h3 {
+    color: #96584E;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    margin: 5px 0;
+}
+
+.contact-divider {
+    width: 2px;
+    height: 120px;
+    background-color: #8C6046;
+}
+
+footer {
+    background-color: #2C2725;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #F1E4CC;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #798165;
+}
+
+@media (max-width: 1024px) {
+
+    .box {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 40px;
+    }
+    .box h2,
+    .box p,
+    .box ul {
+        width: 100%;
+    }
+    .about h1 {
+        font-size: 32px;
+    }
+}
+@media (max-width: 768px) {
+    .hero {
+        height: 250px;
+    }
+    .hero-text h1 {
+        font-size: 26px;
+    }
+    .hero-text p {
+        font-size: 14px;
+    }
+    .container {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+    .contact-box {
+        width: 100%;
+    }
+    .contact-divider {
+        display: none;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+    }
+}
+
