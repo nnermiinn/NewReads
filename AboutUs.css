@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1E4CC;
+    color: #2C2725;
+}
+
+body > img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 60px 0;
+    color: #2C2725;
+}
+.about {
+    width: 100%;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 10%;
+    align-items: center;
+}
+.box h2 {
+    width: 30%;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.box p,
+.box ul {
+    width: 70%;
+    line-height: 1.6;
+}
+.mission {
+    background-color: #96584E;
+    color: #F1E4CC;
+}
+.vision {
+    background: url("images/about-bg.jpg") center/cover no-repeat;
+    position: relative;
+    color: #F1E4CC;
+}
+.vision::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(44, 39, 37, 0.7);
+}
+.vision h2,
+.vision p {
+    position: relative;
+    z-index: 1;
+}
+.values {
+    background-color: #F1E4CC;
+}
+.values h2 {
+    color: #96584E;
+}
+.values ul {
+    list-style: none;
+}
+.values li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+.values li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: #798165;
+}
+footer {
+    background-color: #2C2725;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: #F1E4CC;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+footer a:hover {
+    color: #798165;
+}
+@media (max-width: 768px) {
+
+    body > img {
+        width: 50px;
+        height: 50px;
+        top: 10px;
+        left: 10px;
+    }
+    .about h1 {
+        font-size: 28px;
+        margin: 40px 0;
+    }
+    .box {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .box h2,
+    .box p,
+    .box ul {
+        width: 100%;
+    }
+}
